@@ -1,0 +1,56 @@
+.positions {
+	.reset-position() {
+		top: auto;
+		bottom: auto;
+		left: auto;
+		right: auto;
+	}
+
+	&, &.top-right {
+		.reset-position();
+
+		top: 0;
+		right: 0;
+
+		a {
+			transform+_: rotate(45deg);
+			transform+_: translateY(-1.5em);
+		}
+	}
+
+	&.top-left {
+		.reset-position();
+
+		top: 0;
+		left: 0;
+
+		a {
+			transform+_: rotate(-45deg);
+			transform+_: translateY(-1.5em);
+		}
+	}
+
+	&.bottom-right {
+		.reset-position();
+
+		bottom: 0;
+		right: 0;
+
+		a {
+			transform+_: rotate(-45deg);
+			transform+_: translateY(1.5em);
+		}
+	}
+
+	&.bottom-left {
+		.reset-position();
+
+		bottom: 0;
+		left: 0;
+
+		a {
+			transform+_: rotate(45deg);
+			transform+_: translateY(1.5em);
+		}
+	}
+}

@@ -1,0 +1,36 @@
+.fork-me-banner-color(@foreground-color, @background-color) {
+	a {
+		color: @foreground-color;
+		background-color: @background-color;
+
+		// Since this is supposed to just do a minor change to make the
+		// text stand out a bit more, an inverted color should work here?
+		text-shadow+: 0px 0px 5px fade(#FFFFFF - @foreground-color, 40%);
+		text-shadow+: 0px -1px fade(#FFFFFF - @foreground-color, 40%);
+	}
+}
+
+.colors() {
+	.fork-me-banner-color(#EAEAEA, #6D6D6D);
+
+	// Colors
+	&.green {
+		.fork-me-banner-color(#EAEAEA, #007200);
+	}
+
+	&.dark-blue {
+		.fork-me-banner-color(#EAEAEA, #121621);
+	}
+
+	&.orange {
+		.fork-me-banner-color(#EAEAEA, #E17700);
+	}
+
+	&.red {
+		.fork-me-banner-color(#EAEAEA, #AA0000);
+	}
+
+	&.white {
+		.fork-me-banner-color(#333333, #EAEAEA);
+	}
+}
