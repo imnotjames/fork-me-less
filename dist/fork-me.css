@@ -57,8 +57,8 @@
           transform: rotate(45deg) translateY(1.5em);
 }
 .fork-me {
-  width: 150px;
-  height: 150px;
+  width: 176.7766953px;
+  height: 176.7766953px;
   overflow: hidden;
   position: absolute;
   display: block;
@@ -66,20 +66,20 @@
 }
 .fork-me a {
   position: absolute;
-  width: 150px * 2;
-  height: 150px * 0.23;
+  width: 500px;
+  height: 35px;
   top: 50%;
   left: 50%;
-  margin-left: (150px * 2 / 2) * -1;
-  margin-top: (150px * 0.23 / 2) * -1;
+  margin-left: -250px;
+  margin-top: -17.5px;
   pointer-events: auto;
   white-space: nowrap;
   display: block;
   text-align: center;
   text-decoration: none;
-  line-height: 150px * 0.23;
+  line-height: 35px;
   font-family: "Collegiate", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-  font-size: 150px * 0.23 / 2.5;
+  font-size: 17.5px;
   font-weight: 700;
   letter-spacing: 0.1px;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
