@@ -5,8 +5,8 @@
 
 		// Since this is supposed to just do a minor change to make the
 		// text stand out a bit more, an inverted color should work here?
-		text-shadow+: 0px 0px 5px fade(#FFFFFF - @foreground-color, 40%);
-		text-shadow+: 0px -1px fade(#FFFFFF - @foreground-color, 40%);
+		text-shadow+: 0px 0px 5px fade(difference(#FFFFFF, @foreground-color), 40%);
+		text-shadow+: 0px -1px fade(difference(#FFFFFF, @foreground-color), 40%);
 	}
 }
 
