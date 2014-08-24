@@ -16,8 +16,8 @@
 	pointer-events: none;
 
 	a {
-		@fork-banner-width: @fork-banner-size * 2;
-		@fork-banner-height: @fork-banner-size * 0.23;
+		@fork-banner-width: (@fork-banner-size * 2);
+		@fork-banner-height: (@fork-banner-size * 0.23);
 
 		position: absolute;
 		width: @fork-banner-width;
@@ -28,8 +28,8 @@
 
 		// Margins have to be negative half the width or height so the banner
 		// is visually centered
-		margin-left: (@fork-banner-width / 2) * -1;
-		margin-top: (@fork-banner-height / 2) * -1;
+		margin-left: ((@fork-banner-width / 2) * -1);
+		margin-top: ((@fork-banner-height / 2) * -1);
 
 		// Reset the previous hack and allow clicks on this item
 		pointer-events: auto;
@@ -50,7 +50,7 @@
 		font-family+: "Arial";
 		font-family+: "sans-serif";
 
-		font-size: @fork-banner-height / 2.5;
+		font-size: (@fork-banner-height / 2.5);
 		font-weight: 700;
 
 		letter-spacing: 0.1px;
