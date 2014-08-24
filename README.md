@@ -1,5 +1,7 @@
 # Github Fork Ribbon in LESS/CSS
 
+![Example](https://raw.githubusercontent.com/imnotjames/fork-me-less/master/example.png)
+
 ## Usage
 
 The default ribbon is pretty basic - an anchor inside of a `fork-me` classed
