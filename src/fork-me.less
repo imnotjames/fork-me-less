@@ -16,33 +16,41 @@
 	pointer-events: none;
 
 	a {
+		@fork-banner-width: @fork-banner-size * 2;
+		@fork-banner-height: @fork-banner-size * 0.23;
+
 		position: absolute;
-		width: @fork-banner-size * 2;
-		height: 2.5em;
+		width: @fork-banner-width;
+		height: @fork-banner-height;
 
 		top: 50%;
 		left: 50%;
 
-		margin-left: -150px;
-		margin-top: -1.25em;
+		// Margins have to be negative half the width or height so the banner
+		// is visually centered
+		margin-left: (@fork-banner-width / 2) * -1;
+		margin-top: (@fork-banner-height / 2) * -1;
 
+		// Reset the previous hack and allow clicks on this item
 		pointer-events: auto;
 
 		white-space: nowrap;
 
-		display: inline-block;
+		display: block;
 
 		text-align: center;
 		text-decoration: none;
-		line-height: 2.5em;
+		line-height: @fork-banner-height;
 
+		// Pretty sure most of these won't be on their computers
+		// But Collegiate is the actual font we'd want
 		font-family+: "Collegiate";
 		font-family+: "Helvetica Neue";
 		font-family+: "Helvetica";
 		font-family+: "Arial";
 		font-family+: "sans-serif";
 
-		font-size: 0.9em;
+		font-size: @fork-banner-height / 2.5;
 		font-weight: 700;
 
 		letter-spacing: 0.1px;
@@ -50,8 +58,6 @@
 		box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
 
 		z-index: 9999;
-
-		transform-origin: 50% 50%;
 
 		// The stiching
 		&:before {
